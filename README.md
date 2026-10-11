@@ -1,14 +1,15 @@
 # CEGE0096: Geospatial Programming
 
+Students should use Moodle to access the practical notebooks, data and instructions provided for each session. The standalone Python setup handout below explains how to prepare a local environment and VS Code.
+
 ## Week 1
 
-- Lecture Slides: [Introduction (Programming and Python)](https://github.com/aldolipani/CEGE0096/blob/master/01%20-%20Week/1%20-%20Introduction.pptx)
-- Solutions: [Introduction (Programming and Python)](https://github.com/aldolipani/CEGE0096/blob/master/01%20-%20Week/1%20-%20Solutions.pptx)
-- Handout: [Edina Digimap](https://github.com/aldolipani/CEGE0096/blob/master/01%20-%20Week/Edina%20Digimap.md)
-- Handout: [Anaconda](https://github.com/aldolipani/CEGE0096/blob/master/01%20-%20Week/Anaconda.md)
-- Handout: [Anaconda for MacBooks with M1 and M2 Chips](https://github.com/aldolipani/CEGE0096/blob/master/01%20-%20Week/Anaconda%20for%20M1.md)
-- Practical Notebook: [Anaconda, Python Notebooks and Python Basics](https://github.com/aldolipani/CEGE0096/blob/master/01%20-%20Week/1%20-%20Anaconda%2C%20Python%20Notebooks%20and%20Python%20Basics.ipynb)
-- Practical Notebook with Solutions: [Anaconda, Python Notebooks and Python Basics](https://github.com/aldolipani/CEGE0096/blob/master/01%20-%20Week/1%20-%20Anaconda%2C%20Python%20Notebooks%20and%20Python%20Basics%20with%20Solutions.ipynb)
+- Lecture Slides: [Introduction (Programming and Python)](01%20-%20Week/1%20-%20Introduction.pptx)
+- Solutions: [Introduction (Programming and Python)](01%20-%20Week/1%20-%20Solutions.pptx)
+- Handout: [Edina Digimap](01%20-%20Week/Edina%20Digimap.md)
+- Handout: [Setting Up Python, Conda and VS Code](01%20-%20Week/Week1_Python_Development_Setup.md)
+- Practical Notebook: [Python Notebooks and Python Basics](01%20-%20Week/Week1_Python_Notebooks_and_Basics.ipynb)
+- Practical Notebook with Solutions: [Python Notebooks and Python Basics](01%20-%20Week/Week1_Python_Notebooks_and_Basics_with_Solutions.ipynb)
 
 ## Week 2
 
