@@ -250,7 +250,7 @@ You can also choose to embrace AI assistance and re-enable it. This is your lear
 
 ## 6. Create and open a local project folder
 
-Create a folder called `CEGE0096` in your Documents folder. This is where you will keep your own code, notebooks and practical data. You can create subfolders for individual practicals as you need them.
+Create a folder called `CEGE0096` in your Documents folder or whichever folder you like as long as its path does not contain space. This is where you will keep your own code, notebooks and practical data. You can create subfolders for individual practicals as you need them.
 
 1. Choose **File → Open Folder** and select `CEGE0096`. Its files will appear in the **Explorer** view. Opening a folder keeps related scripts, notebooks and data together as a workspace.
 2. Open the **Command Palette** with `Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS.
@@ -267,7 +267,7 @@ The **interpreter** selection controls Python scripts and debugging. Each notebo
 
 ## 7. Try running a Python script
 
-In Explorer, create a folder named `practice` and a file inside it named `hello.py`. Enter and save:
+In Explorer, create a folder named `week_1` and a file inside it named `hello.py`. Enter and save:
 
 ```python
 name = "CEGE0096"
@@ -290,7 +290,7 @@ cd ~/Documents/CEGE0096
 With that folder as the terminal's current directory, run:
 
 ```text
-python practice/hello.py
+python week_1/hello.py
 ```
 
 You should see `Hello, CEGE0096!`. You can also open the file and choose **Run Python File in Terminal** from the editor's run menu.
@@ -299,7 +299,7 @@ For another project, create its own folder, open it in VS Code and select the ap
 
 ## 8. Work with a Jupyter notebook
 
-1. Open the **Explorer** view in VS Code. Select the folder where you want to save your notebook, click the **New File** button, type `week_1.ipynb` and press **Enter**. **Make sure the file extension is `.ipynb`!** VS Code creates the file and opens it in the notebook editor.
+1. Open the **Explorer** view in VS Code. Select the folder where you want to save your notebook, e.g., the `week_1` you just created, click the **New File** button, type `week_1.ipynb` and press **Enter**. **Make sure the file extension is `.ipynb`!** VS Code creates the file and opens it in the notebook editor.
 2. Click **Select Kernel** at the top right. Choose **Select Another Kernel → Python Environments** if needed, then choose `geospatial`. Labels can vary slightly between extension versions.
 3. Add a code cell using **+ Code**. Run it using its play button or `Shift+Enter`. Outputs appear below the cell. Markdown cells contain formatted explanations rather than executable Python.
 
@@ -337,7 +337,7 @@ Auto Save applies to your scripts and notebooks once they have a filename and sa
 
 ### Open practical materials from Moodle
 
-When instructed, download the practical notebook (`.ipynb`) and its accompanying data from Moodle. Save them together in a subfolder of `CEGE0096`, preserving any folder structure specified in the practical. Keep the `.ipynb` extension when saving a notebook.
+When instructed, download the practical notebook (`.ipynb`) and its accompanying data from Moodle. Save them together in the corresponding folder of `CEGE0096`, preserving any folder structure specified in the practical (you can manage your folder structures by creating subfolders like `week_1`, `week_2`, etc.). Keep the `.ipynb` extension when saving a notebook.
 
 Open the notebook from VS Code's Explorer and select the `geospatial` kernel. You can use the same environment for different practical folders.
 
