@@ -1,10 +1,37 @@
 # Installing Git and Using GitHub
 
+## Table of contents
+
+- [1. Install and configure Git](#1-install-and-configure-git)
+  - [Check whether Git is already installed](#check-whether-git-is-already-installed)
+  - [Install Git](#install-git)
+    - [Windows](#windows)
+    - [macOS](#macos)
+    - [Linux](#linux)
+  - [Verify the installation](#verify-the-installation)
+  - [Set your name and email](#set-your-name-and-email)
+- [2. Turn your CEGE0096 folder into a Git repository](#2-turn-your-cege0096-folder-into-a-git-repository)
+  - [Open your course folder](#open-your-course-folder)
+  - [Initialise the repository](#initialise-the-repository)
+  - [Add your files to the staging area](#add-your-files-to-the-staging-area)
+  - [Make your first commit](#make-your-first-commit)
+- [3. Use GitHub with your CEGE0096 repository](#3-use-github-with-your-cege0096-repository)
+  - [Create a GitHub account](#create-a-github-account)
+  - [Create an empty repository on GitHub](#create-an-empty-repository-on-github)
+  - [Connect your local repository to GitHub](#connect-your-local-repository-to-github)
+  - [Set up GitHub authentication](#set-up-github-authentication)
+  - [Push your local commits](#push-your-local-commits)
+  - [Continue working with Git and GitHub](#continue-working-with-git-and-github)
+  - [If connecting or pushing fails](#if-connecting-or-pushing-fails)
+- [Troubleshooting](#troubleshooting)
+
 This tutorial sets up Git and GitHub for CEGE0096 on Windows, macOS or Linux. Follow the installation instructions for your operating system, then complete the shared Git and GitHub exercises. Installation time varies; allow extra time if macOS needs to download developer tools. You will need an internet connection and permission to install software on your computer.
 
 **Git** records changes to files so you can review previous versions and work with others. **GitHub** hosts Git repositories online. You do not need a GitHub account to install Git or use it locally.
 
-## 1. Check whether Git is already installed
+## 1. Install and configure Git
+
+### Check whether Git is already installed
 
 Open **PowerShell** on Windows or **Terminal** on macOS or Linux, then run:
 
@@ -12,25 +39,19 @@ Open **PowerShell** on Windows or **Terminal** on macOS or Linux, then run:
 git --version
 ```
 
-If a Git version appears, Git is already available; continue to section 4. If the command is not recognised or reports `command not found`, follow the installation steps below. On macOS, running it may prompt you to install Apple’s Command Line Tools; complete that installation as described in section 3. Copy only the commands from code blocks, without any terminal prompt.
+If a Git version appears, Git is already available; continue to [Verify the installation](#verify-the-installation). If the command is not recognised or reports `command not found`, follow the installation steps below. On macOS, running it may prompt you to install Apple’s Command Line Tools; complete that installation as described under [macOS](#macos). Copy only the commands from code blocks, without any terminal prompt.
 
-## 2. Choose the installation method
+### Install Git
 
-### Windows: download the installer
+Follow the instructions for your operating system, then continue to [Verify the installation](#verify-the-installation).
+
+#### Windows
 
 1. Open the [official Git for Windows download page](https://git-scm.com/install/windows).
 2. Under **Standalone Installer**, choose **Git for Windows/x64 Setup** for most Intel or AMD computers. Choose **ARM64 Setup** for a Windows computer with an ARM processor. To check your system, open **Settings → System → About** and read **System type**.
-3. Save the `.exe` installer to your folder. Choose the setup installer rather than the portable edition for this tutorial.
+3. Save the `.exe` installer to your Downloads folder. Choose the setup installer rather than the portable edition for this tutorial.
 
 Use the current installer offered on the official page; its version number will change over time.
-
-### macOS and Linux: install from the terminal
-
-You do not need the Windows installer. On macOS, use Apple’s Command Line Tools or an existing Homebrew installation. On Linux, use your distribution’s package manager. Follow the appropriate instructions in section 3.
-
-## 3. Install Git
-
-### Windows
 
 Open the downloaded `.exe` file. If Windows asks for permission, check that the prompt refers to the Git installer you downloaded, then allow it to continue.
 
@@ -47,7 +68,7 @@ Installer screens can vary between releases. Use these choices when the correspo
 
 Click **Install**, wait for setup to complete, then click **Finish**. Close any open terminal windows and restart VS Code so they pick up the new PATH setting.
 
-### macOS
+#### macOS
 
 Open **Terminal**. If Git is not already available, install Apple’s Command Line Tools:
 
@@ -65,7 +86,7 @@ brew install git
 
 Choose one method; there is no need to install Git twice. These options are listed on the [official Git macOS installation page](https://git-scm.com/install/mac).
 
-### Linux
+#### Linux
 
 Open **Terminal** and use the commands for your distribution. Run only the matching set.
 
@@ -96,7 +117,7 @@ sudo zypper install git
 
 `sudo` requests administrator privileges and may ask for your login password; password characters are not displayed as you type. Review the proposed package changes before confirming. If you do not have installation privileges on a managed computer, ask IT for help. See the [official Git Linux installation page](https://git-scm.com/install/linux) for other distributions.
 
-## 4. Verify the installation
+### Verify the installation
 
 After installation, restart VS Code and open a **new terminal**: PowerShell on Windows, or Terminal on macOS or Linux. Run:
 
@@ -108,11 +129,11 @@ You should see output beginning with `git version`, followed by a version number
 
 If you use VS Code, open **Terminal → New Terminal** and check `git --version` there too.
 
-## 5. Set your name and email
+### Set your name and email
 
-Git attaches an author name and email address to each commit. In your terminal, replace the example values with your own:
+Git attaches an author name and email address to each commit. Replace the example values in the commands below with your own.
 
-Set your name and email now so you can continue with the exercises. For `user.name`, use your GitHub username or any other preferred name; it does not need to match your GitHub username. If you do not have a GitHub account yet, use your preferred name and current email address. After signing up in section 7, return here if you need to update either setting by running the commands below again with the new values.
+Set your name and email now so you can continue with the exercises. For `user.name`, use your GitHub username or any other preferred name; it does not need to match your GitHub username. If you do not have a GitHub account yet, use your preferred name and current email address. After signing up in [section 3](#create-a-github-account), return here if you need to update either setting by running the commands below again with the new values.
 
 To associate your commits with your GitHub profile, use a verified email address on your GitHub account. Updating these settings affects future commits; it does not change the author details in existing commits.
 
@@ -132,7 +153,7 @@ git config --global --get user.email
 
 See Git's [first-time setup guide](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) for more about these settings.
 
-## 6. Turn your CEGE0096 folder into a Git repository
+## 2. Turn your CEGE0096 folder into a Git repository
 
 The [Week 1 Python development setup guide](../01%20-%20Week/Week1_Python_Development_Setup.md#6-create-and-open-a-local-project-folder) asked you to create a **CEGE0096 folder** on your computer. Use that folder for this exercise. If you have not created it yet, create it now; refer to the linked guide for instructions. You will record a first snapshot of your code and notebooks. If you have not completed the Week 1 coding exercises, follow the guide to create `week_1/hello.py` before continuing.
 
@@ -158,11 +179,11 @@ Confirm that you can see your Week 1 files before continuing.
 ### Initialise the repository
 
 ```sh
-git init
+git init -b main
 git status
 ```
 
-`git init` creates a hidden `.git` folder that stores the repository's history; your existing files stay in place. For a new repository, `git status` should report branch `main`, no commits yet, and **untracked files**. Untracked means Git can see a file but has not started recording it. If you already initialised this folder, you can continue with the existing repository.
+`git init` creates a new repository with `main` as its initial branch and a hidden `.git` folder that stores the repository's history; your existing files stay in place. For a new repository, `git status` should report branch `main`, no commits yet, and **untracked files**. Untracked means Git can see a file but has not started recording it. If you already initialised this folder, skip `git init` and continue with the existing repository. Check its branch with `git branch --show-current`; use that name in the later push command if it differs from `main`.
 
 ### Add your files to the staging area
 
@@ -200,11 +221,11 @@ git status
 git log
 ```
 
-If the diff opens in a scrolling view, press `q` to return to the terminal. A **commit** is a saved snapshot of the staged changes, with your message explaining what you recorded. `git log` should show your  commit history and the identifiers of your commits.
+If the diff opens in a scrolling view, press `q` to return to the terminal. A **commit** is a saved snapshot of the staged changes, with your message explaining what you recorded. `git log` should show your commit history and the identifiers of your commits.
 
 `git status` will say **nothing to commit, working tree clean** if all your changes have been committed and no untracked files remain. Otherwise, review the remaining files and decide whether to add or ignore them. Future edits need another `git add` and `git commit` to record a new snapshot. Your commits are stored locally; uploading them to GitHub is a separate step.
 
-## 7. Use GitHub with your CEGE0096 repository
+## 3. Use GitHub with your CEGE0096 repository
 
 **GitHub** is an online service for hosting Git repositories. It gives your project a remote home where you can view files and commit history in a browser, access your work from another computer, and collaborate with others. For this module, pushing your commits to GitHub keeps an online copy of the work you have recorded.
 
@@ -216,7 +237,7 @@ Git manages the repository on your computer. GitHub hosts a **remote repository*
 2. Follow the prompts to create a free personal account, choose a username, and complete any verification steps.
 3. Verify your email address when prompted. Keep access to this email account so you can recover your GitHub account.
 
-Check that the email you configured in [Set your name and email](#5-set-your-name-and-email) is verified on your GitHub account. If you want to use a different author name or email for future commits, return to section 5 and run the configuration commands again, then continue below.
+Check that the email you configured in [Set your name and email](#set-your-name-and-email) is verified on your GitHub account. If you want to use a different author name or email for future commits, return to that subsection and run the configuration commands again, then continue below.
 
 See the official [account creation guide](https://docs.github.com/en/account-and-profile/how-tos/account-management/creating-an-account-on-github) if you need help.
 
@@ -240,7 +261,7 @@ git branch --show-current
 git log --oneline
 ```
 
-You should have at least one commit from section 6. The commands below assume your branch is called `main`. If it has another name, use that name in the push command.
+You should have at least one commit from section 2. The commands below assume your branch is called `main`. If it has another name, use that name in the push command.
 
 Replace the example URL below with the HTTPS URL you copied:
 
@@ -309,7 +330,7 @@ You have completed this section when your GitHub repository shows the files and 
 
 | Problem | What to try |
 | --- | --- |
-| `git` is not recognised or `command not found` | Restart your terminal and VS Code. On Windows, check the installer’s PATH option. On macOS or Linux, confirm that the installation in section 3 completed; if using Homebrew, follow its PATH setup instructions. |
+| `git` is not recognised or `command not found` | Restart your terminal and VS Code. On Windows, check the installer’s PATH option. On macOS or Linux, confirm that the installation in section 1 completed; if using Homebrew, follow its PATH setup instructions. |
 | On Windows, Git works in Git Bash but not PowerShell | Check the installer's PATH option, then open a new PowerShell window. |
 | `gh` is not recognised or `command not found` | Complete the GitHub CLI installation for your platform, restart your terminal, and check `gh --version`. |
 | GitHub authentication fails | On Windows, check Git Credential Manager. With GitHub CLI, run `gh auth status` and, if needed, `gh auth login` again; choose HTTPS and enable authentication for Git. |
