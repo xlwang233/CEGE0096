@@ -24,6 +24,7 @@
   - [Continue working with Git and GitHub](#continue-working-with-git-and-github)
   - [If connecting or pushing fails](#if-connecting-or-pushing-fails)
 - [Troubleshooting](#troubleshooting)
+- [Further resources (A YouTube video series)](#further-resources)
 
 This tutorial sets up Git and GitHub for CEGE0096 on Windows, macOS or Linux. Follow the installation instructions for your operating system, then complete the shared Git and GitHub exercises. Installation time varies; allow extra time if macOS needs to download developer tools. You will need an internet connection and permission to install software on your computer.
 
@@ -339,3 +340,7 @@ You have completed this section when your GitHub repository shows the files and 
 | On Windows, the editor you want is missing from the installer | Install that editor first, or select another installed editor. |
 
 **Check your progress:** You have completed this tutorial if `git --version` works, your name and email are configured, and `git log` shows your first commit in your local `CEGE0096` repository. You should also have a GitHub account and a remote repository containing the commits you pushed from your local repository.
+
+## Further resources
+
+This [Git and GitHub YouTube playlist](https://www.youtube.com/playlist?list=PLUaB-1hjhk8GkHlfKaCJZsF-JFOqkpS29) takes you through installing Git, working with Git in VS Code, branching and merging, and finally working with GitHub. It provides a clear, step-by-step introduction and is highly recommended as a video companion to this guide. Follow along to practise the workflow, revisit topics from the practical, and explore branching and merging in more detail.
