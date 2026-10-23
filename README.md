@@ -23,8 +23,8 @@ Students should use Moodle to access the practical notebooks, data and instructi
 
 - Lecture Slides: [Python Data Structures, IDE and Debugger](https://github.com/aldolipani/CEGE0096/blob/master/03%20-%20Week/3%20-%20Python%20Data%20Structures%2C%20IDE%20and%20Debugger.pptx)
 - Solutions: [Python Data Structures, IDE and Debugger](https://github.com/aldolipani/CEGE0096/blob/master/03%20-%20Week/3%20-%20Solutions.pptx)
-- Practical Notebook: [Python Data Structures and PyCharm](https://github.com/aldolipani/CEGE0096/blob/master/03%20-%20Week/3%20-%20Python%20Data%20Structures%20and%20PyCharm.ipynb)
-- Practical Notebook with Solutions: [Python Data Structures and PyCharm](https://github.com/aldolipani/CEGE0096/blob/master/03%20-%20Week/3%20-%20Python%20Data%20Structures%20and%20PyCharm%20with%20Solutions.ipynb)
+- Practical Notebook: [Python Data Structures and VS Code](https://github.com/aldolipani/CEGE0096/blob/master/03%20-%20Week/3%20-%20Python%20Data%20Structures%20and%20VS%20Code.ipynb)
+- Practical Notebook with Solutions: [Python Data Structures and VS Code](https://github.com/aldolipani/CEGE0096/blob/master/03%20-%20Week/3%20-%20Python%20Data%20Structures%20and%20VS%20Code%20with%20Solutions.ipynb)
 
 ## Week 4
 
